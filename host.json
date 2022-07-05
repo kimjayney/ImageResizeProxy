@@ -4,5 +4,8 @@
     "logLevel": {
       "RainstormTech.Storm.ImageProxy": "Information"
     }
+  },
+  "http": {
+    "routePrefix": ""
   }
 }
