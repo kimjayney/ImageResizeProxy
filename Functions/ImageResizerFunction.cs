@@ -35,7 +35,7 @@ namespace RainstormTech.Storm.ImageProxy
          * Main entry point...takes a wildcard.
          */
         [FunctionName("ResizeImage")]
-        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "ResizeImage/{*restOfPath}")] HttpRequest req, string restOfPath)
+        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "/{*restOfPath}")] HttpRequest req, string restOfPath)
         {
             // check to see if we have a cached version and just leave if we do
             if (req.HttpContext.Request.GetTypedHeaders().IfModifiedSince.HasValue)
