@@ -6,6 +6,6 @@
     }
   },
   "http": {
-    "routePrefix": ""
+    "routePrefix": "/"
   }
 }
